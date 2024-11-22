@@ -1,16 +1,27 @@
+
+# Installing Required Libraries for this project
+
 install.packages("dplyr")
 install.packages("ggplot2")
+
+
 # Load required libraries
 library(dplyr)
-# 1. Load the datasets
+library(ggplot2)
+
+
+# Loading Data Set
+# Data Set Location in DataSet Folder
+
 attendance <- read.csv("DataSet/secondary-attendance-csv-2.csv")
 free_school_meals <- read.csv("DataSet/secondary-free-school-meals-csv-1.csv")
 
-# Inspect structure 
 str(attendance)
 str(free_school_meals)
 
-# Clean columns
+# Cleaning Data
+
+# Data Set -> Student Attendance
 attendance <- attendance %>%
   rename(
     TotalPupils = Tot_Pupil,
@@ -19,24 +30,25 @@ attendance <- attendance %>%
     TotalSessions = TotalSess
   )
 
+# Data Set -> Free School Meals
 free_school_meals <- free_school_meals %>%
   rename(
     FSMEntitled = FSMEntitl,
     TotalRoll = TotalNOR
   )
 
-# 2. Merging datasets on code
+# Merging Data set
 merged_data <- merge(
   attendance, free_school_meals, 
   by = "lsoa11cd"
 )
 
-# Inspected data
+# Inspecting Merged Data set
 head(merged_data)
 
 
 
-# Calculate new metrics
+# Calculating Metics
 merged_data <- merged_data %>%
   mutate(
     AttendanceRate = (AuthorizedSessions / TotalSessions) * 100,
@@ -44,11 +56,15 @@ merged_data <- merged_data %>%
     FSMProportion = (FSMEntitled / TotalRoll) * 100
   )
 
-# Inspect the merged data with new metrics
+# Inspecting the Merged Data
 head(merged_data)
 
 # Summary statistics
 summary(merged_data)
+
+
+# Getting 2 rows 1 coulmn 
+head(merged_data,2)
 
 
 
