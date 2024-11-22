@@ -91,6 +91,8 @@ quartile_summary <- merged_data %>%
 
 print(quartile_summary)
 
+
+
 # Visulization of Quartile Analysis
 # Bar Plot of FSM Quartile vs Average Attendance Rate
 
@@ -101,6 +103,8 @@ ggplot(quartile_summary, aes(x = FSMQuartile, y = AverageAttendanceRate)) +
     x = "FSM Quartile",
     y = "Average Attendance Rate"
   )
+
+
 
 
 
