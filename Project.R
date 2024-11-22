@@ -73,3 +73,8 @@ correlation_attendance <- cor(merged_data$FSMProportion, merged_data$AttendanceR
 # Correlation b/w FSM PROPORTION and UNAUTHORIZED ABSENCE RATE
 correlation_unauth <- cor(merged_data$FSMProportion, merged_data$UnauthorizedAbsenceRate)
 
+
+print(paste("Correlation between FSM Proportion and Attendance Rate:", correlation_attendance))
+print(paste("Correlation between FSM Proportion and Unauthorized Absence Rate:", correlation_unauth))
+
+
