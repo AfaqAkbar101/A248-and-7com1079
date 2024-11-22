@@ -149,3 +149,20 @@ ggplot(merged_data, aes(x = AttendanceRate)) +
   xlab("Attendance Rate (%)") +
   ylab("Frequency") +
   theme_minimal()
+
+
+
+# Histogram
+# Distribution of FSM Proportion
+
+ggplot(merged_data, aes(x = FSMProportion)) +
+  geom_histogram(bins = 30, fill = "purple", color = "black", alpha = 0.7) +
+  ggtitle("Distribution of FSM Proportion") +
+  xlab("FSM Proportion (%)") +
+  ylab("Frequency") +
+  theme_minimal()
+
+
+
+
+
