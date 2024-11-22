@@ -127,3 +127,25 @@ ggplot(merged_data, aes(x = FSMProportion, y = UnauthorizedAbsenceRate)) +
   ylab("Unauthorized Absence Rate (%)") +
   theme_minimal()
 
+# Bar Plot
+# Average Attendance Rate by FSM Proportion Quartiles
+
+ggplot(quartile_summary, aes(x = factor(FSMQuartile), y = AverageAttendanceRate)) +
+  geom_bar(stat = "identity", fill = "green", alpha = 0.8) +
+  ggtitle("Average Attendance Rate by FSM Proportion Quartiles") +
+  xlab("FSM Quartile") +
+  ylab("Average Attendance Rate (%)") +
+  theme_minimal()
+
+
+
+
+# Histogram
+# Distribution of Attendance Rates
+
+ggplot(merged_data, aes(x = AttendanceRate)) +
+  geom_histogram(bins = 30, fill = "blue", color = "black", alpha = 0.7) +
+  ggtitle("Distribution of Attendance Rates") +
+  xlab("Attendance Rate (%)") +
+  ylab("Frequency") +
+  theme_minimal()
