@@ -33,3 +33,23 @@ merged_data <- merge(
 
 # Inspected data
 head(merged_data)
+
+
+
+# Calculate new metrics
+merged_data <- merged_data %>%
+  mutate(
+    AttendanceRate = (AuthorizedSessions / TotalSessions) * 100,
+    UnauthorizedAbsenceRate = (UnauthorizedSessions / TotalSessions) * 100,
+    FSMProportion = (FSMEntitled / TotalRoll) * 100
+  )
+
+# Inspect the merged data with new metrics
+head(merged_data)
+
+# Summary statistics
+summary(merged_data)
+
+
+
+
