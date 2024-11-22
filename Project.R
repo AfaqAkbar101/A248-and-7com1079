@@ -67,5 +67,9 @@ summary(merged_data)
 head(merged_data,2)
 
 
+# Correlation b/w FSM PROPORTION and ATTANDANCE METRICS
+correlation_attendance <- cor(merged_data$FSMProportion, merged_data$AttendanceRate)
 
+# Correlation b/w FSM PROPORTION and UNAUTHORIZED ABSENCE RATE
+correlation_unauth <- cor(merged_data$FSMProportion, merged_data$UnauthorizedAbsenceRate)
 
