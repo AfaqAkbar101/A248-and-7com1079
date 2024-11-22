@@ -78,3 +78,13 @@ print(paste("Correlation between FSM Proportion and Attendance Rate:", correlati
 print(paste("Correlation between FSM Proportion and Unauthorized Absence Rate:", correlation_unauth))
 
 
+# Quartile Analysis
+merged_data <- merged_data %>%
+  mutate(FSMQuartile = ntile(FSMProportion, 4))
+
+# Summary of FSM Quartile
+quartile_summary <- merged_data %>%
+  group_by(FSMQuartile) %>%
+  summarize(AverageAttendanceRate = mean(AttendanceRate, na.rm = TRUE))
+
+
