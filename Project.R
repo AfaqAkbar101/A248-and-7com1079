@@ -22,6 +22,7 @@ str(free_school_meals)
 # Cleaning Data
 
 # Data Set -> Student Attendance
+# Renaming Columns for better understanding
 attendance <- attendance %>%
   rename(
     TotalPupils = Tot_Pupil,
@@ -37,7 +38,7 @@ free_school_meals <- free_school_meals %>%
     TotalRoll = TotalNOR
   )
 
-# Merging Data set
+# Merging Data 
 merged_data <- merge(
   attendance, free_school_meals, 
   by = "lsoa11cd"
