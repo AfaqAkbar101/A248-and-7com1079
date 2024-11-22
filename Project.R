@@ -105,6 +105,25 @@ ggplot(quartile_summary, aes(x = FSMQuartile, y = AverageAttendanceRate)) +
   )
 
 
+# Scatter Plot
+# Attendance Rate vs FSM Proportion
 
 
+ggplot(merged_data, aes(x = FSMProportion, y = AttendanceRate)) +
+  geom_point(color = "blue", alpha = 0.7) +
+  ggtitle("Attendance Rate vs Free School Meal Proportion") +
+  xlab("FSM Proportion (%)") +
+  ylab("Attendance Rate (%)") +
+  theme_minimal()
+
+
+# Scatter Plot
+# Unauthorized Absence Rate vs FSM Proportion'
+
+ggplot(merged_data, aes(x = FSMProportion, y = UnauthorizedAbsenceRate)) +
+  geom_point(color = "red", alpha = 0.7) +
+  ggtitle("Unauthorized Absence Rate vs Free School Meal Proportion") +
+  xlab("FSM Proportion (%)") +
+  ylab("Unauthorized Absence Rate (%)") +
+  theme_minimal()
 
