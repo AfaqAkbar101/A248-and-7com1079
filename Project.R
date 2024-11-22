@@ -175,5 +175,14 @@ ggplot(merged_data, aes(x = AttendanceRate)) +
   theme_minimal()
 
 
+# Boxplot
+# Attendance Rate by FSM Quartile
+
+ggplot(merged_data, aes(x = factor(FSMQuartile), y = AttendanceRate)) +
+  geom_boxplot(fill = "lightgreen", color = "black", alpha = 0.7) +
+  ggtitle("Attendance Rate by FSM Quartile") +
+  xlab("FSM Quartile") +
+  ylab("Attendance Rate (%)") +
+  theme_minimal()
 
 
