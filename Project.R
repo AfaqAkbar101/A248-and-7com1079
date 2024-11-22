@@ -88,3 +88,4 @@ quartile_summary <- merged_data %>%
   summarize(AverageAttendanceRate = mean(AttendanceRate, na.rm = TRUE))
 
 
+print(quartile_summary)
