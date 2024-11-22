@@ -100,3 +100,6 @@ ggplot(quartile_summary, aes(x = FSMQuartile, y = AverageAttendanceRate)) +
     x = "FSM Quartile",
     y = "Average Attendance Rate"
   )
+
+
+
