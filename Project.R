@@ -185,4 +185,6 @@ ggplot(merged_data, aes(x = factor(FSMQuartile), y = AttendanceRate)) +
   ylab("Attendance Rate (%)") +
   theme_minimal()
 
+  
+
 
