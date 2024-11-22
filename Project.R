@@ -164,5 +164,16 @@ ggplot(merged_data, aes(x = FSMProportion)) +
 
 
 
+# Density Plot
+# Attendance Rate Distribution
+
+ggplot(merged_data, aes(x = AttendanceRate)) +
+  geom_density(fill = "blue", alpha = 0.7) +
+  ggtitle("Density Plot of Attendance Rate") +
+  xlab("Attendance Rate (%)") +
+  ylab("Density") +
+  theme_minimal()
+
+
 
 
