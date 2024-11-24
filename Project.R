@@ -151,6 +151,17 @@ ggplot(merged_data, aes(x = AttendanceRate)) +
   theme_minimal()
 
 
+# Histogram 
+# Distribution of Attendance Rates with Density Curve
+ggplot(merged_data, aes(x = AttendanceRate)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "blue", color = "black", alpha = 0.7) +
+  geom_density(color = "red", size = 1.2) +
+  ggtitle("Distribution of Attendance Rates with Density Curve") +
+  xlab("Attendance Rate (%)") +
+  ylab("Density") +
+  theme_minimal()
+
+
 
 # Histogram
 # Distribution of FSM Proportion
