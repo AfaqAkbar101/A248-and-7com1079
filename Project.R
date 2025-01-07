@@ -13,11 +13,11 @@ library(ggplot2)
 # Loading Data Set
 # Data Set Location in DataSet Folder
 
-attendance <- read.csv("DataSet/secondary-attendance-csv-2.csv")
-free_school_meals <- read.csv("DataSet/secondary-free-school-meals-csv-1.csv")
+attendance <- read.csv("DataSet/secondary-attendance-csv-2.csv") # Student Attendance Data Set
+free_school_meals <- read.csv("DataSet/secondary-free-school-meals-csv-1.csv") # Free School Meals Data Set
 
-str(attendance)
-str(free_school_meals)
+str(attendance) # Structure of Attendance Data Set
+str(free_school_meals) # Structure of Free School Meals Data Set
 
 # Cleaning Data
 
@@ -39,7 +39,7 @@ free_school_meals <- free_school_meals %>%
   )
 
 # Merging Data 
-merged_data <- merge(
+merged_data <- merge( 
   attendance, free_school_meals, 
   by = "lsoa11cd"
 )
@@ -75,8 +75,8 @@ correlation_attendance <- cor(merged_data$FSMProportion, merged_data$AttendanceR
 correlation_unauth <- cor(merged_data$FSMProportion, merged_data$UnauthorizedAbsenceRate)
 
 
-print(paste("Correlation between FSM Proportion and Attendance Rate:", correlation_attendance))
-print(paste("Correlation between FSM Proportion and Unauthorized Absence Rate:", correlation_unauth))
+print(paste("Correlation between FSM Proportion and Attendance Rate:", correlation_attendance)) # Printing the correlation
+print(paste("Correlation between FSM Proportion and Unauthorized Absence Rate:", correlation_unauth)) # Printing the correlation
 
 
 # Quartile Analysis
@@ -89,7 +89,7 @@ quartile_summary <- merged_data %>%
   summarize(AverageAttendanceRate = mean(AttendanceRate, na.rm = TRUE))
 
 
-print(quartile_summary)
+print(quartile_summary) # Printing the summary
 
 
 
@@ -135,7 +135,7 @@ ggplot(quartile_summary, aes(x = factor(FSMQuartile), y = AverageAttendanceRate)
   ggtitle("Average Attendance Rate by FSM Proportion Quartiles") +
   xlab("FSM Quartile") +
   ylab("Average Attendance Rate (%)") +
-  theme_minimal()
+  theme_minimal() 
 
 
 

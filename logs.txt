@@ -1,0 +1,162 @@
+commit 900f968abdd966b91cd33f536ec3c84c4163ec21
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Sun Nov 24 20:44:45 2024 +0000
+
+    Add histogram for Attendance Rates with density curve
+
+commit b093c6a313a1515c585e4c0a3be7a85314914ff9
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Sun Nov 24 20:36:26 2024 +0000
+
+    update
+
+commit ab4e50d751708de47c9c3556c6810b5ca45bf84c
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:59:58 2024 +0000
+
+    update
+
+commit 3f205de689fefa2a799ec8c100c748b54f1740c8
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:59:45 2024 +0000
+
+    update
+
+commit 09f53c183a4ea34fb38765d4076ac63a7a52ff45
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:59:29 2024 +0000
+
+    density plot
+
+commit b86d0a8f78a0e6a06fca68115e87bb1dc7e9e3b7
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:58:44 2024 +0000
+
+    Distribution of FSM Proportion
+
+commit 78e02817711d7068c5e6d5953e6112021ef924e5
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:57:21 2024 +0000
+
+    update
+
+commit 71f0aee708aaaaba28aca73435f3792caa395469
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:56:39 2024 +0000
+
+    update
+
+commit 6ab3853ae6a6afdf92c22477b62736463b4cf795
+Author: AfaqAkbar101 <aa24agw@herts.ac.uk>
+Date:   Fri Nov 22 01:55:06 2024 +0000
+
+    update
+
+commit f79506bf97b9eb3255acae2fcc54aafd15abb1a5
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:35:59 2024 +0000
+
+    Update
+
+commit 884ccf743316c22010a61588886b329d040be522
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:28:18 2024 +0000
+
+    Fix formatting
+
+commit 67daa28ff5fea21d1a1901c75127d74488e17128
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:27:37 2024 +0000
+
+    Add visualization for quartile analysis with bar plot of FSM Quartile vs Average Attendance Rate
+
+commit 0d37718f0c50dd7184c5acada516a59ecef3924d
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:24:18 2024 +0000
+
+    Add print statement for quartile summary output
+
+commit 323bf5a85b3a7a54512144e267acca154b5ae06f
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:23:28 2024 +0000
+
+    Add quartile analysis and summary for FSM Proportion
+
+commit 8ef225331756214395f9721ca8f8fe24251aded7
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:21:32 2024 +0000
+
+    updatedCode
+
+commit 2178db81b782d61ab90f35cb71b826958a278548
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:21:12 2024 +0000
+
+    co-relation
+
+commit 4ac92df0c3e99f8fe17054ad64498d7393eba786
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:19:29 2024 +0000
+
+    fileNameUpdate
+
+commit 185417f6aefaa46fa600e4912565337464cf6189
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 01:16:54 2024 +0000
+
+    updated Code
+
+commit 2c5b6d585ecee97930514333378acf6f0e0c0365
+Author: Muhammad Shoaib <ms23amm@herts.ac.uk>
+Date:   Fri Nov 22 00:59:00 2024 +0000
+
+    summary stats
+
+commit bcd382b7d8690e4d4c7d74cb3842d10a9e16fa56
+Merge: e0eeef9 a71fc30
+Author: Muhammad Shoaib <ms23amm@herts.ac.uk>
+Date:   Fri Nov 22 00:56:17 2024 +0000
+
+    Merge branch 'main' of https://github.com/AfaqAkbar101/A248-and-7com1079
+
+commit e0eeef9b862a71c575376d2998f760e7e4fbe736
+Author: Muhammad Shoaib <ms23amm@herts.ac.uk>
+Date:   Fri Nov 22 00:56:08 2024 +0000
+
+    commit
+
+commit a71fc30bf40fbf91efd28e0aefc9d81e7dce9d9d
+Author: imranshaheer <is23acc@herts.ac.uk>
+Date:   Fri Nov 22 00:50:03 2024 +0000
+
+    Data Cleaning
+
+commit efb29cde6fd94d9d3c9f60e571f5f8cf5e13ff3f
+Author: imranshaheer <is23acc@herts.ac.uk>
+Date:   Fri Nov 22 00:46:11 2024 +0000
+
+    commit
+
+commit f8950c53be71e6176236559192fe689a78a47dfd
+Author: imranshaheer <is23acc@herts.ac.uk>
+Date:   Fri Nov 22 00:42:04 2024 +0000
+
+    commit
+
+commit 51a9d17e16eef78e068a9b947e5b1aa7da55fe98
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Fri Nov 22 00:13:03 2024 +0000
+
+    update
+
+commit 5cc6a60981087d8c2f1df6707d4d88a4cf985174
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Thu Nov 21 23:20:36 2024 +0000
+
+    added dataset
+
+commit 54f792fa1436e66c3865edfc77bd9b2b90059e1a
+Author: Muhammad Zaeem Nasir <mn23aew@herts.ac.uk>
+Date:   Thu Nov 21 23:19:03 2024 +0000
+
+    first commit
